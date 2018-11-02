@@ -5,7 +5,7 @@ const taskList = document.querySelector('.taskList ul');
 let taskNumber = document.querySelector('p span');
 
 // Search
-const searchList = document.querySelector('.searchList ul');
+// const searchList = document.querySelector('.searchList ul');
 
 
 let taskListArray = [];
@@ -44,19 +44,19 @@ const remove = () => {
     taskNumber.textContent = taskListArray.length;
 }
 
-const search = () => {
-    const text = inputText.value;
-    const tasksList = document.querySelectorAll('.taskList li');
-    const tasksListArray = [...tasksList];
+// const search = () => {
+//     const text = inputText.value;
+//     const tasksList = document.querySelectorAll('.taskList li');
+//     const tasksListArray = [...tasksList];
 
-    let tasksListArrayFiltered = tasksListArray.filter(task => task.textContent.includes());
+//     let tasksListArrayFiltered = tasksListArray.filter(task => task.textContent.includes());
 
-    tasksListArrayFiltered.forEach(search => searchList.appendChild(search));
+//     tasksListArrayFiltered.forEach(search => searchList.appendChild(search));
 
-}
+// }
 
 
 
 
 form.addEventListener('submit', add);
-inputText.addEventListener('input', search);
+// inputText.addEventListener('input', search);
