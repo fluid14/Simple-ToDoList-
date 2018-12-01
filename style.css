@@ -10,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.toDo {
+.container {
     position: relative;
     width: 50vw;
     display: flex;
@@ -21,7 +21,7 @@ body {
     box-shadow: 1px 1px 10px grey;
 }
 
-.addInputBgc {
+.background-input {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ body {
     color: #fff;
 }
 
-.addInputBorder {
+.input-border {
     position: relative;
     margin: 5px 20px 20px 20px;
     width: 75%;
@@ -47,7 +47,8 @@ body {
     border-radius: 10px
 }
 
-.addInput {
+.add-input,
+.search-input {
     width: 80%;
     height: 40px;
     font-size: 36px;
@@ -61,7 +62,7 @@ input:focus {
     border: none;
 }
 
-.addBtn {
+.add-btn {
     position: absolute;
     height: 100%;
     width: 20%;
@@ -75,7 +76,7 @@ input:focus {
     right: 0;
 }
 
-.taskNumber {
+.task-number {
     background-color: #ff4757;
     color: #fff;
     padding: 0 20px;
@@ -83,18 +84,14 @@ input:focus {
     line-height: 250%;
 }
 
-.taskList.active,
-.searchList.active {
+.task-list,
+.search-list {
     display: flex;
     flex-direction: column;
     width: 100%;
     border: 1px solid red;
 }
 
-.taskList,
-.searchList {
-    display: none;
-}
 
 ul {
     list-style: none;
@@ -114,7 +111,7 @@ li:nth-child(even) {
     background-color: #ced6e0;
 }
 
-.removeTaskBtn {
+.remove-task-btn {
     width: 20px;
     height: 20px;
     border: 1px solid black;
@@ -127,6 +124,6 @@ li:nth-child(even) {
     cursor: pointer;
 }
 
-.removeTaskBtn:hover {
+.remove-task-btn:hover {
     transform: rotate(90deg);
 }
