@@ -9,7 +9,6 @@ add.addBtn.addEventListener('click', function () {
             element.parentElement.remove();
         })
     })
-    add.numberOfTask.textContent = add.taskList.length;
 })
 
 const search = new Search();
