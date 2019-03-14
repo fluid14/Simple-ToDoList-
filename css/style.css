@@ -76,6 +76,11 @@ input:focus {
     right: 0;
 }
 
+.info {
+    margin: 10px 0;
+    color: #fff;
+}
+
 .task-number {
     background-color: #ff4757;
     color: #fff;
@@ -112,18 +117,20 @@ li:nth-child(even) {
 }
 
 .remove-task-btn {
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    background-color: #fff;
-    outline: none;
-    border: none;
-    background-color: transparent;
     font-size: 16px;
-    transition: .3s linear;
+    transition: .3s ease;
     cursor: pointer;
 }
 
-.remove-task-btn:hover {
-    transform: rotate(90deg);
+.remove-task-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: .3s ease;
+}
+
+.remove-task-btn:hover::after {
+    width: 100%;
 }

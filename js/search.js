@@ -7,6 +7,7 @@ class Search {
     search(e) {
         const searchText = e.target.value;
         const searchList = document.querySelector('.search-list ul');
+        add.info.textContent = '';
         if (searchText) {
             searchList.textContent = '';
             const liElements = document.querySelectorAll('.task-list ul li')
